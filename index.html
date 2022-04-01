@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MU</title>
+
+    <!-- Import Stylesheets -->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+</head>
+
+<body style="background-color: black">
+    <!-- First Section | Mainly about Introductions and Getting USER ATTENTION -->
+    <!-- Also contains the NAVBAR -->
+    <section class="introduction">
+        <div class="container-fluid">
+            <!-- Bootstrap Navigation Bar -->
+            <nav class="navbar navbar-expand-md navbar-dark navbar-bg-dark">
+                <!-- Brand Name ( Company Logo ) -->
+                <a class="navbar-brand">MU</a>
+
+                <!-- Hamburger Menu for responsiveness -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- A div tag, so that the links are to the left and it has a target id so that it can be targeted by the hamburger menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <!-- Navigation Bar Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-warning">GitHub</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-danger">Saints</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Things that are not a part of the Navbar -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="introduction-text width-max-content">
+                        <h1 class="fade-in h1-big width-max-content">MU</h1>
+                        <h2 class="h2-typewriter-anim">Typewriter effect</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="logo-container">
+                        <img src="./Images/Logo-500px.png" alt="LOGO" class="fade-in-logo logo-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr class="seperator">
+    <br>
+    <!-- SECTION TWO -->
+    <section class="about-me">
+        <!-- Bootstrap Container Fluid -->
+        <div class="container-fluid">
+            <h1 class="h1-md">About Me:</h1>
+            <div class="center-middle">
+                <div class="container-fluid">
+                    <p class="p-big">
+                        I am a high-school student who is passionate about IT. I always
+                        want to expand my knowledge in IT and I love to help people! I am
+                        always learning and know Python, Basic Penetration Testing,
+                        Intermediate Web Development and Game Development in Unity3D.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr class="seperator">
+    <br>
+    <!-- SECTION 3 -->
+    <section style="height: 100vh; background-color: black; color: white">
+        <div class="container-fluid">
+            <h1>Some stuff needs to go here</h1>
+        </div>
+    </section>
+    <hr class="seperator">
+    <!-- Contact Form -->
+    <section class="contact-form" style="background-color: black; color: white; height: 100vh">
+        <div class="container-fluid">
+            <h1>Contact Me</h1>
+            <div class="container-fluid">
+                <div class="form">
+                    <form>
+                        <div class="form-group">
+                            <label for="sub">Subject</label>
+                            <input type="text" class="form-control" id="sub" aria-describedby="emailHelp"
+                                placeholder="Enter Subject" />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="msg">Message</label>
+                            <textarea class="form-control" id="msg" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <br />
+                        <div class="submit-btn-container">
+                            <button type="submit" class="btn btn-outline-warning">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="seperator">
+        <br>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="center-middle">
+                <ul class="">
+                    <li class="footer-item">
+                        GitHub
+                    </li>
+                    <li class="footer-item">
+                        Saints
+                    </li>
+                    <li class="footer-item">
+                        Discord
+                    </li>
+                </ul>
+                <p>Made and Designed by MU</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
