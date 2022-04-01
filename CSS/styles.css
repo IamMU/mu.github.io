@@ -1,7 +1,7 @@
 /* PSEUDO */
 :root {
     --section-height: 100vh;
-    --type-writer-chars: 17;
+    --type-writer-chars: 20;
     --cursor-color: #ffffff;
     --bg-color-typerwriter-anim: #000000;
     --font-all: mono;
@@ -19,7 +19,7 @@ section {
 
 /* CUSTOMIZING BOOTSTRAP CLASSES */
 .nav-item {
-    padding: 0px 30px 0px 30px;
+    padding: 5px 25px 5px 25px;
 }
 .navbar-bg-dark {
     background-color: #000000;
@@ -29,10 +29,10 @@ section {
   }
 .navbar-brand {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 .navbar {
-    padding: 0 0 4.5rem;
+    padding: 0 0 5rem;
 }
 
 /* CUSTOM CLASSES */
@@ -43,6 +43,7 @@ section {
 
 .h1-big {
     font-size: 5rem;
+    font-weight: 700;
 }
 
 .h1-very-bg {
@@ -61,6 +62,19 @@ section {
 
 .width-max-content {
     width: max-content;
+}
+
+@media (min-width: 700px) {
+.contact-form {
+    background-color: black; 
+    color: white; 
+    height: 100vh;
+}
+
+.projects {
+    height: 100vh; 
+    background-color: black;
+     color: white;
 }
 
 .logo-img {
@@ -108,6 +122,74 @@ section {
 .footer-item {
     list-style: none;
 }
+}
+
+@media (max-width: 700px) {
+    /* .logo-container {
+        display: flex;
+        justify-content: center;
+    } */
+    .contact-form {
+        background-color: black; 
+        color: white; 
+        height: 100vh;
+    }
+    
+    .projects {
+        height: 240vh; 
+        background-color: black;
+         color: white;
+    }
+
+    .logo-img {
+        display: none;
+        height: 25vh;
+        width: 25vw;
+    }
+    
+    .about-me {
+        height: 240vh;
+        background-color:#000000;
+        color: white;
+    }
+    
+    .p-big {
+        font-size: x-large;
+    }
+    
+    .center-middle {
+        text-align: center;
+    }
+    
+    .submit-btn-container {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .footer {
+        height: 3m;
+        background-color: black;
+    }
+    
+    .seperator {
+        margin: auto;
+        width: 50vw;
+        background-color: white;
+      
+        box-shadow: 0px 0px 1px 1px white;
+        /* in order: x offset, y offset, blur size, spread size, color */
+        /* blur size and spread size are optional (they default to 0) */
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
+    
+    .footer-item {
+        list-style: none;
+    }
+}
+
 /* Typewriter EFFECT ANIMATION */
 .fade-in {
     opacity: 0;
@@ -120,9 +202,9 @@ section {
 
 .fade-in-logo {
     opacity: 0;
-    transform: translateY(15rem);
+    transform: translateY(25rem);
 
-    animation: fade_in_up 4s ease calc(var(--typewriter-speed) + 2s + 1s) forwards;
+    animation: fade_in_up 3s ease calc(var(--typewriter-speed) + 2s + 1s) forwards;
 }
 
 .h2-typewriter-anim::before,
@@ -164,12 +246,5 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes fade_in_side {
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
