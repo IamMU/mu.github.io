@@ -12,7 +12,22 @@
 /* ELEMENT STYLING */
 body {
     font-family: var(--font-all);
+    width: 100%;
+    height: 100%;
 }
+
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #00000000;        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #6368846b;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 section {
     height: var(--section-height);
 }
@@ -64,11 +79,23 @@ section {
     width: max-content;
 }
 
+.logo-img {
+    color: white;
+}
+
+.indicators {
+    padding-top: 50%;
+}
+
 @media (min-width: 700px) {
 .contact-form {
     background-color: black; 
     color: white; 
     height: 100vh;
+}
+
+.carousel-container-projects {
+    height: 60vh;
 }
 
 .projects {
@@ -170,7 +197,8 @@ section {
     }
     
     .center-middle {
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     
     .submit-btn-container {
@@ -198,6 +226,7 @@ section {
     }
     
     .footer-item {
+        margin-left: 0;
         list-style: none;
     }
 }

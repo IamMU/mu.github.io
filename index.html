@@ -103,7 +103,44 @@
     <section id="ProjectsSection" class="projects">
         <div class="container-fluid">
             <h1 class="h1-md">My Projects</h1>
+            <div class="container-fluid">
+                <div id=" Projects-Car" class="carousel slide carousel-container-projects" data-bs-ride="carousel"
+                    data-bs-interval="500" data-bs-pause="hover">
+                    <div class="carousel-inner">
+                        <!-- Carousel Items -->
+
+                        <div class="carousel-item active">
+                            <h1>Morse Code Decoder/Encoder</h1>
+                            <a href="www.google.com">GitHub</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Project 2 Goes Here</h1>
+                            <a href="#" >To project 2</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h1>Project 3 Goes Here</h1>
+                            <a href="#">To project 3</a>
+                        </div>
+
+                        <!-- Indicators  -->
+                        <div class="indicators">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#Projects-Car" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#Projects-Car" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#Projects-Car" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </section>
     <hr class="seperator">
     <!-- Contact Form -->
@@ -112,20 +149,20 @@
             <h1>Contact Me</h1>
             <div class="container-fluid">
                 <div class="form">
-                    <form>
+                    <form method="post" action="mailto:iammu@duck.com">
                         <div class="form-group">
                             <label for="sub">Subject</label>
                             <input type="text" class="form-control" id="sub" aria-describedby="emailHelp"
-                                placeholder="Enter Subject" />
+                                placeholder="Does not work. Click on send to send an email!" />
                         </div>
                         <br />
                         <div class="form-group">
                             <label for="msg">Message</label>
-                            <textarea class="form-control" id="msg" rows="3" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="msg" rows="3" placeholder="Does not work. Click on send to send an email!"></textarea>
                         </div>
                         <br />
                         <div class="submit-btn-container">
-                            <button type="submit" class="btn btn-outline-warning">
+                            <button type="submit"class="btn btn-outline-warning">
                                 Send
                             </button>
                         </div>
@@ -139,7 +176,7 @@
         <!-- FOOTER -->
         <footer class="footer">
             <div class="center-middle">
-                <ul class="">
+                <ul>
                     <li class="footer-item">
                         GitHub
                     </li>
@@ -149,8 +186,10 @@
                     <li class="footer-item">
                         Discord
                     </li>
+                    <li class="footer-item">
+                        <p>Made and Designed by MU</p>
+                    </li>
                 </ul>
-                <p>Made and Designed by MU</p>
             </div>
         </footer>
     </section>
@@ -159,6 +198,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </body>
 
 </html>
